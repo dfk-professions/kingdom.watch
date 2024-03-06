@@ -1,7 +1,9 @@
 import {gql, GraphQLClient} from 'graphql-request';
 import axios from "axios";
 
+// eslint-disable-next-line no-use-before-define
 const greyEggData = require("@/data/greyEggData.json");
+// eslint-disable-next-line no-use-before-define
 const blueEggData = require("@/data/blueEggData.json");
 
 

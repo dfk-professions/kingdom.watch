@@ -76,7 +76,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 export default {
-  name: "Header",
+  name: "AppHeader",
   data() {
     return {
       copied: false,

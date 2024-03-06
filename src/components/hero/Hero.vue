@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col p-3">
         <h3 v-if="userAddress">Heroes of
-          <Address :address="userAddress"/>
+          <BlockchainAddress :address="userAddress"/>
           <span v-if="profileName"> ({{ profileName }})</span>
         </h3>
         <h3 class="text-danger">BETA QUALITY</h3>
@@ -39,7 +39,7 @@ import {extractHeroData, getStatGenes, queryHeros, professionsMap, rarity, mainC
 import HeroStats from "@/components/hero/HeroStats";
 import HeroProfession from "@/components/hero/HeroProfession";
 import HeroTitle from "@/components/hero/HeroTitle";
-import Address from "@/components/generic/Address";
+import BlockchainAddress from "@/components/generic/BlockchainAddress";
 import HeroList from "@/components/hero/HeroList";
 import axios from "axios";
 import HeroLoadOther from "@/components/hero/HeroLoadOther";
@@ -77,7 +77,7 @@ const profileContract = hmy.contracts.createContract(profileContractJson.abi, pr
 
 export default {
   name: "Hero",
-  components: {HeroGenes, HeroLeaderboards, HeroLoadOther, HeroList, Address, HeroTitle, HeroProfession, HeroStats},
+  components: {HeroGenes, HeroLeaderboards, HeroLoadOther, HeroList, BlockchainAddress, HeroTitle, HeroProfession, HeroStats},
   data() {
     return {
       userAddress: "",

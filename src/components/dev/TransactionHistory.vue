@@ -20,7 +20,7 @@
             <td>{{ t.time }}</td>
             <td class="text-end">{{ t.amount }}</td>
             <td>
-              <Address :address="t.to"/>
+              <BlockchainAddress :address="t.to"/>
             </td>
             <td><a :href="'https://explorer.harmony.one/tx/' + t.hash" target="_blank">Explorer</a></td>
           </tr>
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import Address from "@/components/generic/Address";
+import BlockchainAddress from "@/components/generic/BlockchainAddress";
 import {Client, HTTPTransport, RequestManager} from "@open-rpc/client-js";
 
 const {Harmony} = require('@harmony-js/core');
@@ -66,7 +66,7 @@ export default {
     'address'
   ],
   components: {
-    Address
+    BlockchainAddress
   },
   data() {
     return {

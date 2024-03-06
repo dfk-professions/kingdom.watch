@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "Footer",
+  name: "AppFooter",
   data() {
     return {
       tipJar: "0x0e9fbabfac3a56d076b62d48964bd7bf057876d7",

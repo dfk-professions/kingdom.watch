@@ -6,7 +6,7 @@
 import addressMap from '../../data/Wallets'
 
 export default {
-  name: "Address",
+  name: "BlockchainAddress",
   props: [
     'address'
   ],

@@ -1,18 +1,18 @@
 <template>
-  <Header/>
+  <AppHeader/>
   <router-view/>
-  <Footer/>
+  <AppFooter/>
 </template>
 
 <script>
-import Header from "@/components/generic/Header";
-import Footer from "@/components/generic/Footer";
+import AppHeader from "@/components/generic/AppHeader";
+import AppFooter from "@/components/generic/AppFooter";
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer
+    AppHeader,
+    AppFooter
   }
 }
 </script>

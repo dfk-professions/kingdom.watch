@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2>Personal page for<br/>
-      <Address :address="userAddress"/>
+      <BlockchainAddress :address="userAddress"/>
       <span v-if="profileName.length > 0">({{ profileName }})</span>
     </h2>
     <div class="row justify-content-md-center">
@@ -138,7 +138,7 @@ import axios from "axios"
 import epochs from '../../data/Epochs'
 import { contractAddrs } from "@/utils/ethers"
 
-import Address from "@/components/generic/Address"
+import BlockchainAddress from "@/components/generic/BlockchainAddress"
 import PersonalOverview from "@/components/personal/PersonalOverview"
 import PersonalBank from "@/components/personal/PersonalBank"
 import PersonalJeweler from "@/components/personal/PersonalJeweler"
@@ -153,7 +153,7 @@ export default {
     PersonalInventory,
     PersonalHeroes,
     PersonalOverview,
-    Address,
+    BlockchainAddress,
     PersonalBank,
     PersonalJeweler,
     PersonalGardens,

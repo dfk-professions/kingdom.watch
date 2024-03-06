@@ -1,7 +1,7 @@
 <template>
 
   <tr>
-    <td class="text-start"><Address :address="this.address" /></td>
+    <td class="text-start"><BlockchainAddress :address="this.address" /></td>
     <td class="text-end">
       <img style="width: 16px"
            alt="jewel"
@@ -35,12 +35,12 @@ Contract.setProvider('https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc')
 const crystalTokenAbi = require("../../data/CrystalToken.json")
 const crystalContract = new Contract(crystalTokenAbi, "0x04b9dA42306B023f3572e106B11D82aAd9D32EBb");
 
-import Address from "@/components/generic/Address";
+import BlockchainAddress from "@/components/generic/BlockchainAddress";
 
 export default {
   name: "Entity",
   components: {
-    Address
+    BlockchainAddress
   },
   props: [
     'address',

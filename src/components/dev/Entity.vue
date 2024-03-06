@@ -1,7 +1,7 @@
 <template>
 
   <tr>
-    <td class="text-start"><Address :address="this.address" /></td>
+    <td class="text-start"><BlockchainAddress :address="this.address" /></td>
     <td class="text-end">
       <img style="width: 16px"
            alt="jewel"
@@ -43,12 +43,12 @@ const factory = new ContractFactory(wallet);
 
 const JewelContractJson = require("../../data/Jewel.json");
 const JewelContract = factory.createContract(JewelContractJson.abi, "0x72Cb10C6bfA5624dD07Ef608027E366bd690048F");
-import Address from "@/components/generic/Address";
+import BlockchainAddress from "@/components/generic/BlockchainAddress";
 
 export default {
   name: "Entity",
   components: {
-    Address
+    BlockchainAddress
   },
   props: [
     'address',

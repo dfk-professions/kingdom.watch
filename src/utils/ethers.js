@@ -1,4 +1,4 @@
-const { Contract, providers, utils } = require('ethers')
+import {Contract, providers, utils} from 'ethers'
 const { JsonRpcProvider } = providers
 export const { formatUnits, formatEther } = utils
 
@@ -10,6 +10,7 @@ export const RPCs = {
 
 
 //https://public-node-api.klaytnapi.com/v1/cypress
+ 
 export const contractJson = {
     jewel: require("../data/Jewel.json"),
     xJewel: require("../data/xJewel.json"),

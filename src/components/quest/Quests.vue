@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col">
         <h1>Quests done by
-          <Address :address="userAddress"/>
+          <BlockchainAddress :address="userAddress"/>
         </h1>
       </div>
     </div>
@@ -44,14 +44,14 @@
 import axios from "axios";
 
 import {getAllItemAddresses, getItem, GetTokenList} from "@/utils/Items";
-import Address from "@/components/generic/Address";
+import BlockchainAddress from "@/components/generic/BlockchainAddress";
 import QuestsByQuest from "@/components/quest/QuestsByQuest";
 import QuestsByHero from "@/components/quest/QuestsByHero";
 import QuestsTotal from "@/components/quest/QuestsTotal";
 
 export default {
   name: "Quests",
-  components: {QuestsTotal, QuestsByHero, QuestsByQuest, Address},
+  components: {QuestsTotal, QuestsByHero, QuestsByQuest, BlockchainAddress},
   data() {
     return {
       userAddress: "",
